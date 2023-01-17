@@ -1,8 +1,11 @@
 # ELPI
 
-# Background
+## Summary
+This is a demo of an app that outputs an English Learners Progress Indicator score.  The link provided is a form that accepts 2 txt files as input and an email address.  There are 2 files in this repo that contain dummy data that can be uploaded to the form.  The email address should be a Gmail address so that results can be shared in the form of a Google Sheet.
 
-## California School Dasbhoard
+## Background
+
+### California School Dasbhoard
 
 California's accountability system is based on a multiple measures system that assess how local educational agencies (LEAs) and schools are meeting the needs of their students. Performance on these measures is reported through the California School Dashboard (Dashboard). 
 
@@ -10,7 +13,7 @@ State measures include chronic absenteeism, graduation rate, suspension rate, En
 
 Based on performance on state and local measures, schools and districts may be identified for support to improve student outcomes.
 
-## English Learners Progress Indicator (ELPI)
+### English Learners Progress Indicator (ELPI)
 
 The ELPI is based on the English Language Proficiency Assessments for California (ELPAC). Several districts were interested in seeing what their ELPI score was as soon as they received their ELPAC scores, rather than wait several more weeks for their ELPI to be releasee on the CA Dasbhoard.  Data professionals from two of these districts put together a Google Sheet to calculate the ELPI score and wished to share it with the other school districts in Sonoma County.
 
@@ -18,7 +21,7 @@ While the Google Sheet was successful and the business logic relatively straight
 
 When I was asked to support the Sheet, I suggested leveraging Google Cloup Platform (GCP) to make a more maintainable app and thus this project was born.
 
-# Overview
+## Overview
 
 A Google Form acts as the front end to the app and it's only inputs are the current year ELPAC score file, the past year ELPAC score file, and the recipient email address to share the results with (the results are not emailed.  They are in a Google Sheet that is shared with the given email address).
 
