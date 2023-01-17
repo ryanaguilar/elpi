@@ -1,7 +1,9 @@
 # ELPI
 
+[ELPI Preview App](https://docs.google.com/forms/d/e/1FAIpQLSeU8RO8n9iq84S5T3gZsjfxLF1nxKOEbSo8JZjI1rHHCQgXyw/viewform)
+
 ## Summary
-This is a demo of an app that outputs an English Learners Progress Indicator score.  The link provided is a form that accepts 2 txt files as input and an email address.  There are 2 files in this repo that contain dummy data that can be uploaded to the form.  The email address should be a Gmail address so that results can be shared in the form of a Google Sheet.
+This is a demo of an app that outputs an English Learners Progress Indicator score.  The link above is to a form that accepts 2 csv files as input and an email address.  There are 2 files in this repo that contain dummy data that can be uploaded to the form.  The email address should be a Gmail address so that results can be shared in the form of a Google Sheet.
 
 ## Background
 
