@@ -17,3 +17,9 @@ The ELPI is based on the English Language Proficiency Assessments for California
 While the Google Sheet was successful and the business logic relatively straightforward, the formulas ended up labyrinthine and difficult to troubleshoot.  Additionaly there was a lot of data cleanup and prep needed on the ELPAC files once they were copied into the sheet.
 
 When I was asked to support the Sheet, I suggested leveraging Google Cloup Platform (GCP) to make a more maintainable app and thus this project was born.
+
+# Overview
+
+A Google Form acts as the front end to the app and it's only inputs are the current year ELPAC score file, the past year ELPAC score file, and the recipient email address to share the results with (the results are not emailed.  They are in a Google Sheet that is shared with the given email address).
+
+Once the form is submitted, an Apps Script attached to the form calls a Google Cloud function using an HTTP trigger to upload the 2 files from a Drive folder to a Google Cloud Storage bucket. Once the 2 files are loaded, another function is called using an event trigger to load the files into BigQuery as tables.  Another function is then triggered to materialize a view that applies the business logic to calculate the ELPI score for each student.  One final function is triggered to write these results to a Google Sheet and share that sheet with the email address supplied in the form. 
